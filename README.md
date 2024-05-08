@@ -19,5 +19,5 @@ python3 -m src
 ```
 the example of by_hour output
 
-![Image Alt text](Diagrama/Diagrama/output_part1.png "Diagrama"))
-![Image Alt text](Diagrama/Diagrama/output_part2.png "Diagrama")) 
+![Image Alt text](Diagrama/output_part1.png "Diagrama"))
+![Image Alt text](Diagrama/output_part2.png "Diagrama")) 
