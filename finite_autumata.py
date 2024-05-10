@@ -81,21 +81,15 @@ class LifeAutomata:
             if self.name != 'Sleep' and (self.hapiness < 30 or self.energy < 30):
                 self.queue.insert('Eat')
             next_activity = self.queue.popleft()
-            
-            # Update automata's state based on the activity
             self.name = next_activity
             self.state_handler.handle_state(self)
 
-            # Ensure happiness and energy are within bounds
             self.hapiness = max(0, self.hapiness)
             self.energy = max(0, self.energy)
-
-            # Print status
             print(f"Start time: {self.formatted_time(started_time)}, end time \
 {self.formatted_time(self.hour)}, happiness: {self.hapiness}, energy: {self.energy}")
             print()
 
-        # Reset automata's attributes for the next day
         self.energy = 0
         self.hapiness = 0
         self.name = 'Sleep'
